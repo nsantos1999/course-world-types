@@ -1,12 +1,13 @@
 {
   "name": "course-world-types",
   "version": "0.0.1",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Natã Souza Santos",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node ./build/index.js",
+    "start": "node ./dist/index.js",
     "start:dev": "ts-node ./src/index.ts"
   },
   "dependencies": {
@@ -15,5 +16,8 @@
   },
   "devDependencies": {
     "ts-node": "^10.8.2"
-  }
+  },
+  "files": [
+    "/dist"
+  ]
 }
